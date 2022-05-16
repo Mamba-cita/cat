@@ -1,0 +1,148 @@
+$primary-color: #00bcd4;
+$secondary-color: #f44336;
+$tertiary-color: #ff9800;
+$quaternary-color: #9c27b0;
+$quinary-color: #2196f3;
+$senary-color: #009688;
+$septenary-color: #ffeb3b;
+$octonary-color: #ff5722;
+$nonary-color: #795548;
+$denary-color: #607d8b;
+
+$font-family: monospace;
+$font-size: 1.2em;
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  background-color: $nonary-color;
+  max-width: 100%;
+  max-height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: $tertiary-color;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $denary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  position: fixed;
+  img {
+    width: 100px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: -8px;
+      margin-right: 2px;
+      padding: 20px;
+
+      a {
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+        padding: 4px 10px;
+        margin: 1px;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $denary-color;
+        }
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  img:hover {
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid $primary-color;
+  border-left: 1px solid $primary-color;
+  border-right: 1px solid $primary-color;
+  padding-top: 25px;
+  margin-top: 5px;
+
+  padding-right: 5px;
+  padding-left: 5px;
+
+  p {
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $primary-color;
+    text-align: center;
+    width: 40%;
+    line-height: 1.5em;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    margin: 2px;
+  }
+  h1 {
+    font-size: 25px;
+    font-family: $font-family;
+    color: blue;
+    text-align: center;
+    width: 40%;
+    line-height: 1.5em;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    margin: 2px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOXilFy7nTdLYTodYZFcNlxMWI0dG6Org9Q&usqp=CAU")
+      no-repeat center;
+    background-size: cover;
+  }
+
+  img {
+    width: 50%;
+    height: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    mix-blend-mode: multiply;
+  }
+}
+.objectives {
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $primary-color;
+  text-align: center;
+  border-bottom: 1px solid $primary-color;
+  border-left: 1px solid $primary-color;
+  border-right: 1px solid $primary-color;
+  padding-bottom:5px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+ padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+
+}
