@@ -4,6 +4,9 @@ import "./styles.scss";
 export default function Header() {
   return (
     <nav>
+     
+    
+
       <img src="./images/logo1.png" alt="kenya-logo" />
 
       <ul>
@@ -20,9 +23,12 @@ export default function Header() {
           <a href="#">Services</a>
         </li>
         <li>
-          <a href="#">Login</a>
+        <a href="#"> Login</a> 
         </li>
+        
       </ul>
+      <LoginForm/>
+    
     </nav>
   );
 }
