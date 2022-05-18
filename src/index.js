@@ -5,6 +5,9 @@ import App from "./App";
 import Contacts from "./Componets/Contacts";
 import Footer from "./Componets/Footer";
 import Products from "./Componets/Products";
+import AddForm from "./Componets/AddForm";
+
+
 
 
 export default function Render() {
@@ -15,6 +18,7 @@ export default function Render() {
       
       <Contacts />
       <App />
+      <AddForm/> 
 
       <Footer />
     </>
